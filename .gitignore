@@ -1,1 +1,2 @@
 public/javascript/build/*
+!public/javascript/build/.gitkeep

@@ -12,8 +12,7 @@ on:
   push:
     branches: ["main"]
 
-permissions:
-  contents: read
+permissions: write-all
 
 jobs:
   build-and-deploy:
@@ -22,6 +21,9 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0 
 
       - name: Setup Deno
         # uses: denoland/setup-deno@v1
@@ -36,10 +38,12 @@ jobs:
         run: deno lint
 
       - name: Run tests
-        run: deno test -A --unstable
-        
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        run: deno test -A
+
+      - name: Build
+        run: deno bundle --config deno.json ./src/main.ts ./public/javascript/build/sdm.bundle.js
+
+      - uses: EndBug/add-and-commit@v9
         with:
-          folder: public
+          cwd: './public'
 
