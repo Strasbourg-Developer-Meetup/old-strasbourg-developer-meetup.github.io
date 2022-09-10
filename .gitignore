@@ -1,2 +1,2 @@
-public/javascript/build/*
-!public/javascript/build/.gitkeep
+docs/javascript/build/*
+!docs/javascript/build/.gitkeep

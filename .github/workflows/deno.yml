@@ -21,9 +21,6 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          fetch-depth: 0 
 
       - name: Setup Deno
         # uses: denoland/setup-deno@v1
@@ -41,9 +38,14 @@ jobs:
         run: deno test -A
 
       - name: Build
-        run: deno bundle --config deno.json ./src/main.ts ./public/javascript/build/sdm.bundle.js
+        run: deno bundle --config deno.json ./src/main.ts ./docs/javascript/build/sdm.bundle.js
+
+      - name: Remove unneeded files
+        run: git rm -r src .github .vscode .gitignore deno.json README.md
 
       - uses: EndBug/add-and-commit@v9
         with:
-          cwd: './public'
+          add: 'docs/*'
+          new_branch: prod
+
 
