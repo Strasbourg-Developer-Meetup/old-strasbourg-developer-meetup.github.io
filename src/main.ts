@@ -1,4 +1,4 @@
-import solarSystem from "./solarSystem/mod.ts";
+import solarSystem from "./SolarSystem/mod.ts";
 import textArc from "./TextArc/mod.ts";
 
 solarSystem("canvas");
