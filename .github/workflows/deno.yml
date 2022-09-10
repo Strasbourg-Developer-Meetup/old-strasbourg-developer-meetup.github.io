@@ -47,5 +47,6 @@ jobs:
         with:
           add: 'docs/*'
           new_branch: prod
+          fetch: false
 
 
