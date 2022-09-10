@@ -48,5 +48,6 @@ jobs:
           add: 'docs/*'
           new_branch: prod
           fetch: false
+          push: origin prod --force
 
 
