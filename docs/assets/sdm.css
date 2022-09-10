@@ -19,11 +19,21 @@ main {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 h1 {
     font-size: 2em;
     padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+    #slogan {
+        display: none;
+    }
 }
 
 #canvas {
@@ -41,4 +51,18 @@ h1 {
 #slogan > span {
     position: absolute;
     transform-origin: 0 9rem;
+}
+
+#links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#links > * {
+    margin: 5px;
+}
+
+#links img {
+    width: 2rem;
 }
