@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --min-len: max(100vh, 100vw);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f3d503;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0 0.5rem;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#slogan {
+    height: 18rem;
+    font-size: 1em;
+}
+
+#slogan > span {
+    position: absolute;
+    transform-origin: 0 9rem;
+}

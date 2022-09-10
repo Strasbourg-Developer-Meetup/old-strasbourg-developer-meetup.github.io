@@ -1,0 +1,54 @@
+[
+  {
+    "distance": 0.10,
+    "radius": 0.01,
+    "direction": 1,
+    "speed": 3109,
+    "moons": [
+      {
+        "distance": 0.10,
+        "radius": 0.005,
+        "direction": -1,
+        "speed": 2389,
+        "moons": []
+      }
+    ]
+  },
+  {
+    "distance": 0.40,
+    "radius": 0.10,
+    "direction": -1,
+    "speed": 124091,
+    "moons": [
+      {
+        "distance": 0.15,
+        "radius": 0.02,
+        "direction": -1,
+        "speed": 10000,
+        "moons": []
+      }
+    ]
+  },
+  {
+    "distance": 1,
+    "radius": 0.05,
+    "direction": 1,
+    "speed": 100000,
+    "moons": [
+      {
+        "distance": 0.10,
+        "radius": 0.005,
+        "direction": -1,
+        "speed": 1213,
+        "moons": []
+      },
+      {
+        "distance": 0.20,
+        "radius": 0.01,
+        "direction": 1,
+        "speed": 666,
+        "moons": []
+      }
+    ]
+  }
+]
