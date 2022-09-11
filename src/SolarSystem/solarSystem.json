@@ -41,13 +41,13 @@
         "direction": -1,
         "speed": 389210,
         "moons": [
-            {
-                "distance": 0.05,
-                "radius": 0.002,
-                "direction": 1,
-                "speed": 1234,
-                "moons": []
-            }
+          {
+            "distance": 0.05,
+            "radius": 0.002,
+            "direction": 1,
+            "speed": 1234,
+            "moons": []
+          }
         ]
       }
     ]
@@ -64,13 +64,13 @@
         "direction": -1,
         "speed": 1213,
         "moons": [
-            {
-                "distance": 0.20,
-                "radius": 0.005,
-                "direction": 1,
-                "speed": 1240,
-                "moons": []
-            }
+          {
+            "distance": 0.20,
+            "radius": 0.005,
+            "direction": 1,
+            "speed": 1240,
+            "moons": []
+          }
         ]
       },
       {
@@ -94,21 +94,21 @@
         "direction": -1,
         "speed": 121301,
         "moons": [
-            {
-                "distance": 0.05,
-                "radius": 0.010,
-                "direction": 1,
-                "speed": 3240,
-                "moons": [
-                    {
-                        "distance": 0.025,
-                        "radius": 0.006,
-                        "direction": -1,
-                        "speed": 1240,
-                        "moons": []
-                    }
-                ]
-            }
+          {
+            "distance": 0.05,
+            "radius": 0.010,
+            "direction": 1,
+            "speed": 3240,
+            "moons": [
+              {
+                "distance": 0.025,
+                "radius": 0.006,
+                "direction": -1,
+                "speed": 1240,
+                "moons": []
+              }
+            ]
+          }
         ]
       },
       {
@@ -117,13 +117,13 @@
         "direction": 1,
         "speed": 90120,
         "moons": [
-            {
-                "distance": 0.04,
-                "radius": 0.006,
-                "direction": -1,
-                "speed": 400,
-                "moons": []
-            }
+          {
+            "distance": 0.04,
+            "radius": 0.006,
+            "direction": -1,
+            "speed": 400,
+            "moons": []
+          }
         ]
       }
     ]
