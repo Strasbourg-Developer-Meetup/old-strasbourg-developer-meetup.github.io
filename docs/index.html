@@ -16,9 +16,36 @@
         <meta name="author" content="Kevin Faulhaber" />
         <meta name="description" content="We organise modern tech related meetups in Strasbourg France. Everyone is welcome to join in the fun." />
         <meta name="keywords" content="strasbourg,tech,meetup,developer,clean architecture,tdd,programming" />
+        <style>
+            body {
+                margin: 0;
+                max-width: 100%;
+            }
+            nav {
+                position: absolute;
+                display:flex;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 56px;
+                padding: 1em;
+            }
+            nav a {
+                display: inline-flex;
+                background:#d4b404;
+                padding: 1em 2em;
+                border-radius: 5px;
+                align-items: center;
+                color: black;
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
         <canvas id="canvas"></canvas>
+        <nav>
+            <a href="why-deno.html">Why Deno</a>
+        </nav>
         <main>
             <div id="slogan">
                 Tartes flambées et bières
