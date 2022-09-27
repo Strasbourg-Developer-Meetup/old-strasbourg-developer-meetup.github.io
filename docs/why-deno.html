@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Why Deno | Strasbourg Developer Meetup</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="assets/site.webmanifest">
+        <meta property="og:title" content="Why Deno | Strasbourg Developer Meetup" />
+        <meta property="og:image" content="assets/sdm.jpeg" />
+        <meta property="og:description" content="Hello! We're excited to announce our first Meetup which will be centered around the subject Why Deno?.Ever heard of node? node --> [no][de] --> [de][no] --> deno. That's right, Deno is a A modern runtime for JavaScript and TypeScript. Find out what makes Deno so special and how it could be the next big thing." />
+        <meta property="og:locale" content="en_GB" />
+        <meta name="author" content="Kevin Faulhaber" />
+        <meta name="description" content="Hello! We're excited to announce our first Meetup which will be centered around the subject Why Deno?.Ever heard of node? node --> [no][de] --> [de][no] --> deno. That's right, Deno is a A modern runtime for JavaScript and TypeScript. Find out what makes Deno so special and how it could be the next big thing." />
+        <meta name="keywords" content="strasbourg,tech,meetup,deno,nodejs" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+            iframe {
+                border: none;
+                width: 100vw;
+                height: 100vh;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            #why-deno {
+                width: 100vw;
+                height: 100vh;
+                background-color: #94a1f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+            }
+
+            #why-deno h1 {
+                font-size: 40px;
+            }
+
+            #why-deno nav {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            #why-deno nav a {
+                display: flex;
+                align-items: center;
+            }
+
+            #why-deno nav img {
+                width: 30px;
+            }
+
+            #why-deno img {
+                width: max(10vw, 200px);
+                margin: 0 20px;
+            }
+            .bar-container {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                flex-direction: row;
+            }
+            .bar {
+                height: 20px;
+                width: 100px;
+                background-color: black;
+            }
+
+            #sponsors {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100vw;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article id="why-deno">
+                <nav>
+                    <a target="_blank" href="https://www.meetup.com/fr-FR/strasbourg-developer-meetup/events/288443997/">
+                        <img src="assets/meetup.png" alt="why deno meetup event logo"/>
+                        Event information
+                    </a>
+                </nav>
+                <div class="center">
+                    <div class="bar-container">
+                        <div class="bar"></div>
+                        <img src="./assets/deno2.png" alt="deno presentation logo" />
+                        <div class="bar"></div>
+                    </div>
+                    <h1>WHY DENO</h1>
+                </div>
+                <div id="sponsors">
+                    <a target="_blank" href="https://playtix.io/">
+                        <img src="./assets/level.png" alt="l3v3l sponsor logo"/>
+                    </a>
+                    <a target="_blank" href="https://www.sportyma.com/">
+                        <img src="./assets/sportyma.png" alt="sportyma sponsor logo" />
+                    </a>
+                </div>
+            </article>
+            <article>
+                <iframe src="https://slides.com/kevinfaulhaber-1/deck/embed" width="100vw" height="420" title="Why Deno" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </article>
+        </main>
+    </body>
+</html>
